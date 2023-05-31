@@ -1,0 +1,183 @@
+html, body{
+    position: relative;
+    width: 1440px;
+    height: 1024px;
+    font-family: 'Inter', sans-serif;
+    background: #F0EBE3;
+}
+
+form{
+    position: absolute;
+    width: 900px;
+    height: 421px;
+    left: 110px;
+    top: 162px;
+    font-size: 36px;
+    line-height: 44px;
+    color: rgba(0, 0, 0, 0.9);
+
+}
+
+form textarea{
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1em;
+    border: none;
+    box-shadow: 0px 4px 12px rgba(125, 157, 156, 0.2);
+    border-radius: 30px;
+    background-color: white;
+}
+
+form textarea:focus{
+    outline: none;
+}
+
+.output{
+    position: absolute;
+    width: 400px;
+    height: 850px;
+    left: 75%;
+    top: 80px;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(125, 157, 156, 0.6);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(2px);
+    /* Note: backdrop-filter has minimal browser support */
+
+    border-radius: 50px;
+}
+
+.output img{
+    width: 50%;
+    height: 40%;
+}
+
+.copyButton{
+
+    display: flex;
+    vertical-align: bottom;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+
+    position: absolute;
+    width: 240px;
+    height: 90px;
+    left: calc(50% - 240px/2);
+    top: calc(50% - 90px/2 + 366px);;
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    background:  #E4DCCF;
+    box-shadow: 0px 4px 12px rgba(125, 157, 156, 0.2);   
+
+    border-radius: 40px;
+    border: none;
+    cursor: pointer;
+
+    font-size: 1.5em;
+    font-family: 'Inter';
+    font-weight: bold;
+
+}
+
+.copyButton:hover{
+    background:  #d1c8b9;
+    font-size: 1.6em;
+}
+
+#resultado, #textoEsperando{
+    font-size: 1.2em;
+    font-weight: 600;
+    text-align: center;
+    align-items: start;
+    font-family: 'Inter';
+    font-style: normal;
+}
+
+.buttons{
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 348px;
+    height: 231px;
+    left: calc(25%);
+    top: 650px;
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+    
+.codButton{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+
+    position: absolute;
+    width: 240px;
+    height: 90px;
+    left: calc(50% - 240px/2);
+    top: calc(50% - 90px/2 - 54.5px);
+
+    background:  #E4DCCF;
+    box-shadow: 0px 4px 12px rgba(125, 157, 156, 0.2);  
+
+    border-radius: 40px;
+    border: none;
+    cursor: pointer;
+
+    font-size: 1.5em;
+    font-family: 'Inter';
+    font-weight: bold;
+
+}
+
+.codButton:hover{
+    background:  #d1c8b9;
+    font-size: 1.6em;
+}
+
+.decodButton{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    
+    position: absolute;
+    width: 240px;
+    height: 90px;
+    left: calc(50% - 240px/2);
+    top: calc(50% - 90px/2 + 55.5px);
+
+    background:  rgba(125, 157, 156, 0.6);
+    box-shadow: 0px 4px 12px rgba(125, 157, 156, 0.2);  
+    
+    border-radius: 40px;
+    border: none;
+    cursor: pointer;
+
+    font-size: 1.5em;
+    font-family: 'Inter';
+    font-weight: bold;
+
+}
+
+.decodButton:hover{
+    background:  rgba(85, 103, 102, 0.6);
+    font-size: 1.6em;
+}
